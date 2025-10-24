@@ -14,9 +14,10 @@ It is what it is. You may like it or not, i don't care.
   
 - [x] ~~Eslint~~
 
-- [ ] Page transitions
-  - [ ] Block pop state
-
+- [x] ~~Page transitions~~
+  
+  - [x] ~~Block pop state~~
+  
 - [ ] SEO
 
 - [x] ~~Custom events~~
@@ -28,8 +29,6 @@ It is what it is. You may like it or not, i don't care.
 - `useEvent`: bind/unbind events
 
 - `useTransitionType`: for page transitions, used in middleware
-
-  
 
   
 
