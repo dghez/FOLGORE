@@ -1,0 +1,24 @@
+:root {
+  /* COMP */
+  --size: 390;
+  --containerPadding: 2rem;
+  --gridGutter: 2rem;
+  --bodyFontSize: 1.2rem;
+
+  --font-main: "Azeret Mono", monospace;
+}
+
+@variant sm {
+  :root {
+    --size: 1500;
+    --containerPadding: 4rem;
+    --gridGutter: 2rem;
+    --bodyFontSize: 1.4rem;
+  }
+}
+
+@variant 3xl {
+  :root {
+    --bodyFontSize: 1rem;
+  }
+}

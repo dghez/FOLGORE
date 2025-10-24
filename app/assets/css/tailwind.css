@@ -1,0 +1,86 @@
+/* @config "../../tailwind.config.js"; */
+@import 'tailwindcss';
+
+/* ──────────────────────────────────────────────
+   UTILITIES
+────────────────────────────────────────────── */
+@utility text-* {
+    font-size: calc(--value(integer) * 0.1rem);
+}
+
+/* ──────────────────────────────────────────────
+   THEME: BREAKPOINTS
+   (Width-based tokens only — no full media strings)
+────────────────────────────────────────────── */
+@theme {
+    --breakpoint-2xs: 375px;
+    --breakpoint-xs: 415px;
+    --breakpoint-sm: 650px;
+    --breakpoint-md: 769px;
+    --breakpoint-lg: 1100px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    --breakpoint-3xl: 2001px;
+    --breakpoint-4xl: 2101px;
+}
+
+/* ──────────────────────────────────────────────
+   CUSTOM VARIANTS
+   (use literal media queries — variables won’t work here)
+────────────────────────────────────────────── */
+@custom-variant landscape (@media (orientation: landscape));
+@custom-variant portrait (@media (orientation: portrait));
+@custom-variant portrait-large (@media (orientation: portrait) and (min-width: 650px));
+@custom-variant has-hover (@media (hover: hover) and (pointer: fine));
+@custom-variant has-hover-l (@media (hover: hover) and (pointer: fine) and (min-width: 650px));
+@custom-variant max-4xl (@media (max-width: 2100px));
+@custom-variant max-s (@media (max-width: 649px));
+
+/* ──────────────────────────────────────────────
+   THEME: COLORS
+────────────────────────────────────────────── */
+@theme {
+    --color-black: #000;
+    --color-white: #f7f8f9;
+    --color-grey: #555;
+    --color-mario: #1fbeca
+}
+
+/* ──────────────────────────────────────────────
+   THEME: TYPOGRAPHY & SPACING
+────────────────────────────────────────────── */
+@theme {
+    --font-main: var(--font-main);
+    --spacing: 0.1rem;
+}
+
+/* ──────────────────────────────────────────────
+   THEME: TRANSITION TIMINGS
+────────────────────────────────────────────── */
+@theme {
+    --ease-DEFAULT: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    --ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    --ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    --ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+    --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    --ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    --ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+    --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+    --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+    --ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+    --ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+    --ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+    --ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    --ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
