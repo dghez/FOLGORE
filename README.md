@@ -30,6 +30,8 @@ It is what it is. You may like it or not, i don't care.
 
 - `useTransitionType`: for page transitions, used in middleware
 
+- `usePageTransitionEvent`: a shortcut for page transitions events
+
   
 
    
