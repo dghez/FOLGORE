@@ -4,6 +4,7 @@ dist/
 # generated types
 .astro/
 .nuxt/
+.output/
 
 # dependencies
 node_modules/

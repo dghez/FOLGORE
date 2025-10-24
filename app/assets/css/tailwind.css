@@ -34,7 +34,7 @@
 @custom-variant has-hover (@media (hover: hover) and (pointer: fine));
 @custom-variant has-hover-l (@media (hover: hover) and (pointer: fine) and (min-width: 650px));
 @custom-variant max-4xl (@media (max-width: 2100px));
-@custom-variant max-s (@media (max-width: 649px));
+@custom-variant max-sm (@media (max-width: 649px));
 
 /* ──────────────────────────────────────────────
    THEME: COLORS

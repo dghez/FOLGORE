@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
   <div class="site-max">
     <h1 class="f-h1 mt-200">Starter</h1>

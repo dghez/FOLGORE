@@ -1,21 +1,45 @@
-# FOLGORE - NuxtStarter
+# FOLGORE - Nuxt4 Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+It is what it is. You may like it or not, i don't care.
 
 
 
 ## Pieces
 
 - [x] ~~Tailwind~~
-- [ ] Lenis
-- [ ] Eslint 
+
+- [ ] Plugins
+  -  [x] ~~Lenis / Scroll~~
+  -  [x] ~~Resize~~
+  
+- [x] ~~Eslint~~
+
 - [ ] Page transitions
-- [ ] Events
-- [ ] 
+  - [ ] Block pop state
 
+- [ ] SEO
 
+- [x] ~~Custom events~~
 
+  
 
+## Helpers
+
+- `useEvent`: bind/unbind events
+
+- `useTransitionType`: for page transitions, used in middleware
+
+  
+
+  
+
+   
+
+## TIPS
+
+1. Apparently Tailwind4 is messing with Nuxt4 but everything is fixed if you run a `npm run generate` before starting. FOUC should be fixed in this way.
+
+   
 
 ## Setup
 
@@ -54,4 +78,6 @@ npm run preview
 ```
 
 ---
+
+
 
