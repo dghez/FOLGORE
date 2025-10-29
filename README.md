@@ -27,14 +27,17 @@ It is what it is. You may like it or not, i don't care.
 ## Helpers
 
 - `useEvent`: bind/unbind events
-
 - `useTransitionType`: for page transitions, used in middleware
-
 - `usePageTransitionEvent`: a shortcut for page transitions events
 
-  
 
-   
+
+## Library
+
+- `<LibraryImage />`: static images component, supports loading / decoding and more
+- `<LibraryIntro />`: cover everything base logic
+
+ 
 
 ## TIPS
 
