@@ -29,13 +29,17 @@ body {
     min-height: 100%;
     font-family: var(--font-main);
     line-height: 1.5;
-    background: #080808;
+    background: var(--color-black);
 }
 
 body {
     font-size: var(--bodyFontSize);
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+img {
+  width: 100%;
 }
 
 canvas {

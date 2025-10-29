@@ -5,18 +5,10 @@ export default defineNuxtPlugin(() => {
     const cbs = new Set()
     const o = ref(null)
 
-    const ww = useState(
-        '_width', () => document.documentElement.clientWidth
-    )
-    const wh = useState(
-        '_height', () => document.documentElement.clientHeight,
-    )
-    const small = useState(
-        '_small', () => window.matchMedia('(max-width: 649px)').matches,
-    )
-    const mouse = useState(
-        '_mouse', () => window.matchMedia('(hover: hover) and (pointer: fine)').matches,
-    )
+    const ww = useState('_width', () => document.documentElement.clientWidth)
+    const wh = useState('_height', () => document.documentElement.clientHeight,)
+    const small = useState('_small', () => window.matchMedia('(max-width: 649px)').matches,)
+    const mouse = useState('_mouse', () => window.matchMedia('(hover: hover) and (pointer: fine)').matches,)
 
     const resize = debounce(() => {
         ww.value = document.documentElement.clientWidth

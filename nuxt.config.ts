@@ -31,8 +31,8 @@ export default defineNuxtConfig({
     }
   },
   plugins: [
-    { src: '~/plugins/gsap.client.js' },
-    { src: '~/plugins/resize.client.js' },
-    { src: '~/plugins/scroll.client.js' },
+    { src: '~/plugins/gsap.js', mode: 'client' },
+    { src: '~/plugins/resize.js', mode: 'client' },
+    { src: '~/plugins/scroll.js', mode: 'client' }
   ]
 })

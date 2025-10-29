@@ -10,6 +10,7 @@ const EVENTS = {
     // 'WEBGL_APP_READY': 'WEBGL:APP:READY',
 
     // APP
+    'APP_READY': 'APP:READY',
     'APP_TICK': 'APP:TICK',
     'APP_RESIZE': 'APP:RESIZE',
     'APP_SCROLL': 'APP:SCROLL',

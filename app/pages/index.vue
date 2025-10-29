@@ -3,7 +3,10 @@
 
 <template>
   <div class="site-max">
-    <div class="pt-200">
+    <div class="pt-100">
+      <div>
+        <LibraryImage src="/images/logo.png" :eager="true" class="max-w-200 aspect-square"/>
+      </div>
       <h1 class="f-h1">[FOLGORE]</h1>
       <div class="max-w-550">
         <p class="mb-12">Folgore is a Nuxt starter boilerplate by Robert borghesi / dghez, engineered to electrify development velocity.</p>

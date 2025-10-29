@@ -40,10 +40,10 @@
    THEME: COLORS
 ────────────────────────────────────────────── */
 @theme {
-    --color-black: #000;
+    --color-black: #080808;
     --color-white: #f7f8f9;
     --color-grey: #555;
-    --color-mario: #1fbeca
+    --color-debug: #ff0000
 }
 
 /* ──────────────────────────────────────────────
