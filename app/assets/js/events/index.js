@@ -1,8 +1,6 @@
 // import Emitter from 'tiny-emitter'
 import Emitter from './Emitter'
 
-const emitter = new Emitter()
-
 const EVENTS = {
     // WEBGL
     // 'WEBGL_BEFORE_RENDER': 'WEBGL:BEFORE:RENDER',
@@ -34,6 +32,8 @@ const PRIORITY = {
     mid: 20,
     low: 30
 }
+
+const emitter = new Emitter({ labels: EVENTS })
 
 export { EVENTS, PRIORITY }
 export default emitter

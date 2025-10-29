@@ -1,6 +1,7 @@
 
-export class Emitter {
-    constructor() {
+export default class Emitter {
+    constructor({ labels } = {}) {
+        this.labels = labels
         this.events = {}
     }
 
@@ -13,9 +14,9 @@ export class Emitter {
 
     on(event, cb, priority = 0) {
 
-        if (!Object.values(EVENTS).includes(event)) {
-            console.log(`The ${event} event doesn't exists on ${EVENTS}`)
-            console.warn(`The ${event} event doesn't exists on ${EVENTS}`)
+        if (this.labels && !Object.values(this.labels).includes(event)) {
+            console.log(`The ${event} event doesn't exists on ${this.labels}`)
+            console.warn(`The ${event} event doesn't exists on ${this.labels}`)
         }
 
         // Add the callback to the event's callback list, or create a new list with the callback
