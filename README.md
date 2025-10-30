@@ -24,6 +24,8 @@ It is what it is. You may like it or not, i don't care.
 
 - [ ] YAML support
 
+- [ ] Store / pinia?
+
   
 
 ## Helpers
