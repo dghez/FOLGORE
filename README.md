@@ -22,6 +22,8 @@ It is what it is. You may like it or not, i don't care.
 
 - [x] ~~Custom events~~
 
+- [ ] YAML support
+
   
 
 ## Helpers
