@@ -58,13 +58,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     // GSAP TICKER
     gsap.ticker.add((time) => {
         lenis.raf(time * 1000)
-
-        events.emit(EVENTS.APP_TICK, {
-            y: lenis.scroll,
-            time,
-            ratio: gsap.ticker.deltaRatio(60),
-            force: lenis.scroll - lenis.targetScroll
-        })
     })
 
     // SMOOTHING

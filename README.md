@@ -11,6 +11,7 @@ It is what it is. You may like it or not, i don't care.
 - [ ] Plugins
   -  [x] ~~Lenis / Scroll~~
   -  [x] ~~Resize~~
+  -  [x] ~~Ticker~~
   
 - [x] ~~Eslint~~
 

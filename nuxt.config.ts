@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/gsap.js', mode: 'client' },
     { src: '~/plugins/resize.js', mode: 'client' },
-    { src: '~/plugins/scroll.js', mode: 'client' }
+    { src: '~/plugins/scroll.js', mode: 'client' },
+    { src: '~/plugins/ticker.js', mode: 'client' },
   ]
 })
