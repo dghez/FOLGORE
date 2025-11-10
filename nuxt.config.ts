@@ -35,5 +35,6 @@ export default defineNuxtConfig({
     { src: '~/plugins/resize.js', mode: 'client' },
     { src: '~/plugins/scroll.js', mode: 'client' },
     { src: '~/plugins/ticker.js', mode: 'client' },
+    { src: '~/plugins/device.js', mode: 'client' },
   ]
 })

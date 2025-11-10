@@ -12,6 +12,7 @@ It is what it is. You may like it or not, i don't care.
   -  [x] ~~Lenis / Scroll~~
   -  [x] ~~Resize~~
   -  [x] ~~Ticker~~
+  -  [x] ~~Device~~
   
 - [x] ~~Eslint~~
 
@@ -27,6 +28,9 @@ It is what it is. You may like it or not, i don't care.
 
 - [ ] Store / pinia?
 
+  - [ ] useStaticStore / useReactiveStore
+  - [ ] set debug by default
+  
   
 
 ## Helpers
