@@ -22,7 +22,9 @@ This is still under development, subjected to changes.
   
   - [x] ~~Block pop state~~
   
-- [ ] SEO
+- [x] ~~SEO~~
+
+  - [x] ~~useSeo~~
 
 - [x] ~~Custom events~~
 
@@ -32,7 +34,7 @@ This is still under development, subjected to changes.
 
   - [x] ~~useStaticStore / useReactiveStore~~
   - [x] set debug by default
-  
+
   
 
 ## Composables
