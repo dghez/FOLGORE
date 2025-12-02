@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
 
+  modules: [
+    '@nuxtjs/sitemap',
+    '@nuxt/eslint'
+  ],
+
   // TAILWIND
   css: ['@/assets/css/main.css'],
   vite: {
@@ -24,10 +29,10 @@ export default defineNuxtConfig({
     }
   },
 
-  // SEO
+  // SEO + use in pair with useSeo
   site: {
-    url: 'https://batcloud.art/',
-    name: 'THE BAT CLOUD',
+    url: 'https://website.com',
+    name: 'WEBSITE NAME',
   },
 
   app: {
@@ -81,11 +86,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-
-  modules: [
-    '@nuxtjs/sitemap',
-    '@nuxt/eslint'
-  ],
 
   eslint: {
     config: {

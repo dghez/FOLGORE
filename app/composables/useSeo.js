@@ -1,7 +1,7 @@
-const BASE_URL = "https://batcloud.art"
-const DESCRIPTION = 'The bat cloud: a moment of encounter between bats and humans at sfer ik museion'
+const BASE_URL = "https://website.com"
+const DESCRIPTION = 'Description for website'
 const IMAGE = BASE_URL + '/share.jpg'
-const BASE_TITLE_TEMPLATE = 'THE BAT CLOUD'
+const BASE_TITLE_TEMPLATE = 'WEBSITE NAME'
 
 export const useSeo = (
     { title = '', description = '', image = null } = {}, // ? seo
