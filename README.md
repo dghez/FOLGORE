@@ -14,6 +14,7 @@ This is still under development, subjected to changes.
   -  [x] ~~Resize~~
   -  [x] ~~Ticker~~
   -  [x] ~~Device~~
+  -  [x] ~~Scroll Restoration~~
   
 - [x] ~~Eslint~~
 
@@ -27,10 +28,10 @@ This is still under development, subjected to changes.
 
 - [ ] YAML support
 
-- [ ] Store / pinia?
+- [x] Store / pinia
 
-  - [ ] useStaticStore / useReactiveStore
-  - [ ] set debug by default
+  - [x] ~~useStaticStore / useReactiveStore~~
+  - [x] set debug by default
   
   
 
@@ -40,6 +41,7 @@ This is still under development, subjected to changes.
 - `useTransitionType`: for page transitions, used in middleware
 - `usePageTransitionEvent`: a shortcut for page transitions events (enter, leave etc)
 - `useSeo`: seo customization x page
+- `useStaticStore` & `useReactiveStore`: get static/reactive values from the `pinia` store. It supports multiple stores if needed.
 
 
 

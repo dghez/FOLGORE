@@ -7,7 +7,9 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/sitemap',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    "@pinia/nuxt",
+    '@vueuse/nuxt',
   ],
 
   // TAILWIND
