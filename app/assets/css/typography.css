@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*
+ Add the font, then create the variables in the variables.css file and uin theme in tailwind.css
+*/
+
 @font-face {
   font-family: "Fiero";
   src: url("/fonts/fiero-regular.woff2") format("woff2"),
