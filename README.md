@@ -5,6 +5,12 @@ This is still under development, subjected to changes.
 
 
 
+[TODO FROM OTHER]:
+
+- debug.js plugin > mind-robotics
+
+
+
 ## Pieces
 
 - [x] ~~Tailwind~~

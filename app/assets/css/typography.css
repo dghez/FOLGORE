@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+@font-face {
+  font-family: "Fiero";
+  src: url("/fonts/fiero-regular.woff2") format("woff2"),
+    url("/fonts/fiero-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
 
 .f-h1 {
   font-size: 10rem;
