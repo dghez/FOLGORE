@@ -43,7 +43,7 @@ export default class Emitter {
         this.on(event, onceCallback, priority)
 
         return () => {
-            this.off(event, cb)
+            this.off(event, onceCallback)
         }
     }
 

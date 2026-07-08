@@ -23,6 +23,6 @@ export const usePageTransitionEvent = (event, cb, priority = PRIORITY.INSTANT) =
     })
 
     onUnmounted(() => {
-        events.off(event, cb)
+        events.off(event, internalCb)
     })
 }
