@@ -96,6 +96,7 @@ export default defineNuxtConfig({
   },
   plugins: [
     { src: "~/plugins/disableScrollRestoration.js", mode: 'client' },
+    { src: '~/plugins/debug.js', mode: 'client' },
     { src: '~/plugins/gsap.js', mode: 'client' },
     { src: '~/plugins/resize.js', mode: 'client' },
     { src: '~/plugins/scroll.js', mode: 'client' },

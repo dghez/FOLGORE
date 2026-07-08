@@ -5,12 +5,6 @@ This is still under development, subjected to changes.
 
 
 
-[TODO FROM OTHER]:
-
-- debug.js plugin > mind-robotics
-
-
-
 ## Pieces
 
 - [x] ~~Tailwind~~
@@ -21,6 +15,7 @@ This is still under development, subjected to changes.
   -  [x] ~~Ticker~~
   -  [x] ~~Device~~
   -  [x] ~~Scroll Restoration~~
+  -  [x] Debug
   
 - [x] ~~Eslint~~
 

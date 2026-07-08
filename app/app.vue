@@ -1,10 +1,4 @@
 <script setup>
-// DEBUG
-const { setIsDebug } = useStaticStore()
-const route = useRoute()
-
-const isDebug = !!route.query?.debug
-setIsDebug(isDebug)
 </script>
 
 <template>
