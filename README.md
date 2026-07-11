@@ -29,7 +29,7 @@ This is still under development, subjected to changes.
 
 - [x] ~~Custom events~~
 
-- [ ] YAML support
+- [x] YAML support
 
 - [x] Store / pinia
 
