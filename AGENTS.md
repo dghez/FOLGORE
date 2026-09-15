@@ -56,3 +56,17 @@ All transitions are defined in this global middleware using GSAP timelines. It e
 - Layout primitives: `.site-max` (padded container) and `.main-grid` (6-col mobile / 12-col desktop grid) from `main.css`.
 - `<LibraryImage />` for static images (lazy load + fade-in), `<LibraryJesperMedia />` for CMS media objects (responsive image/video, not ready for use).
 - Do not commit `.DS_Store`, `dist`, `.output`, or `.nuxt`.
+
+## Skills (AI-agnostic)
+
+Task playbooks live in [`docs/skills/`](docs/skills/) — one markdown file per workflow. Read the matching skill before implementing that kind of change. Edit those files to update guidance; do not duplicate them elsewhere.
+
+| Skill | When |
+|-------|------|
+| [new-page](docs/skills/new-page.md) | New route / `app/pages/*.vue` / SEO |
+| [new-component](docs/skills/new-component.md) | New Vue component / Library vs feature |
+| [page-transitions](docs/skills/page-transitions.md) | Enter/leave GSAP / `usePageTransitionEvent` |
+| [gsap-lenis](docs/skills/gsap-lenis.md) | GSAP, Lenis, `$scroll`, ScrollTrigger, ticker |
+| [event-bus](docs/skills/event-bus.md) | `EVENTS`, `PRIORITY`, `useEvent` |
+| [css-scale](docs/skills/css-scale.md) | Rem scale, spacing, `text-*`, breakpoints, grid |
+| [new-store](docs/skills/new-store.md) | Pinia store + dual store registration |

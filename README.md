@@ -5,6 +5,13 @@ This is still under development, subjected to changes.
 
 
 
+UPDATES TO DO:
+
+- useSeo (bring from AGORA)
+- scroll logic lenis / touch-deskrop scroll update test	90c4d33	Roberto Borghesi <dborghez@yahoo.it>	25 Aug 2026 at 14:55
+
+
+
 ## Pieces
 
 - [x] ~~Tailwind~~
@@ -15,7 +22,7 @@ This is still under development, subjected to changes.
   -  [x] ~~Ticker~~
   -  [x] ~~Device~~
   -  [x] ~~Scroll Restoration~~
-  -  [x] Debug
+  -  [x] ~~Debug~~
   
 - [x] ~~Eslint~~
 
