@@ -9,6 +9,10 @@ import events, { EVENTS } from '@js/events'
 export default defineNuxtPlugin((nuxtApp) => {
     const { $resize } = nuxtApp
 
+    let lenis = undefined
+    let resize = undefined
+    let tick = undefined
+
     const to = (target = 0, d = 1) => {
         const type = typeof target
         let t = 0
@@ -39,40 +43,74 @@ export default defineNuxtPlugin((nuxtApp) => {
         })
     }
 
-    const lenis = new Lenis({
-        lerp: 0.15,
-        wheelMultiplier: 1.25,
-        autoResize: false
-    })
+    const unmount = () => {
+        if (tick) gsap.ticker.remove(tick)
+        tick = null
 
-    lenis.on('scroll', (lenis) => {
-        ScrollTrigger.update()
+        lenis?.destroy()
+        lenis = null
+    }
 
-        events.emit(EVENTS.APP_SCROLL, {
-            y: lenis.scroll,
-            target: lenis.targetScroll,
-            lenis
+    const mount = () => {
+        const mouse = $resize.mouse
+        const wrapper = !mouse ? qs('[data-mobile-scroll]') : undefined
+        const content = !mouse ? qs('[data-mobile-scroll-content]') : undefined
+
+        ScrollTrigger.defaults({ scroller: wrapper ?? window })
+        lenis = new Lenis({
+            lerp: 0.15,
+            wheelMultiplier: 1.25,
+            autoResize: false,
+            ...(wrapper && { wrapper, content }),
         })
-    })
 
-    // GSAP TICKER
-    gsap.ticker.add((time) => {
-        lenis.raf(time * 1000)
-    })
+        lenis.on('scroll', (lenis) => {
+            ScrollTrigger.update()
+            events.emit(EVENTS.APP_SCROLL, {
+                y: lenis.scroll,
+                target: lenis.targetScroll,
+                lenis
+            })
+        })
 
-    // SMOOTHING
-    gsap.ticker.lagSmoothing(0)
+        tick = (time) => {
+            lenis.raf(time * 1000)
+        }
 
-    $resize.add(() => {
+        // GSAP TICKER
+        gsap.ticker.add(tick)
+
+        // SMOOTHING
+        gsap.ticker.lagSmoothing(0)
+
+        resize = () => {
+            ScrollTrigger.refresh()
+            lenis.resize()
+        }
+
+        $resize.add(() => {
+            resize()
+        })
+    }
+
+    mount()
+
+    watch($resize.reactiveMouse, (value) => {
+        if (!value) { document.body.classList.add('overflow-hidden') }
+        else { document.body.classList.remove('overflow-hidden') }
+
+        unmount()
+        mount()
+
         ScrollTrigger.refresh()
-        lenis.resize()
-    })
+    }, { immediate: true })
 
     return {
         provide: {
             scroll: {
                 to,
                 lenis,
+                resize,
                 get y() {
                     return lenis.scroll
                 },

@@ -43,6 +43,8 @@ export default defineNuxtRouteMiddleware((to, from) => {
             done()
 
             isTransitioning = false // ENABLE TRANSITIONS
+            $scroll.resize()
+            $scroll.lenis.start()
         }
 
         gsap.set(el, { autoAlpha: 0.01, y: 50 })
@@ -62,10 +64,11 @@ export default defineNuxtRouteMiddleware((to, from) => {
     /** LEAVE */
     t.onBeforeLeave = (el) => {
         isTransitioning = true // BLOCK TRANSITIONS
+        $scroll.lenis.stop()
 
         y = $scroll.y
 
-        $scroll.lenis.scrollTo(0, { immediate: true })
+        $scroll.lenis.scrollTo(0, { immediate: true, force: true })
         gsap.set(el, { position: 'absolute', top: 0, left: 0, y: -y })
     }
 
